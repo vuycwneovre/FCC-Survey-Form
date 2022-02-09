@@ -3,18 +3,28 @@
     margin: 0px;
     
 }
+
 body {
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodix.com%2Flogo%2F1959293.png&f=1&nofb=1);
-    background-size: 800px 600px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: bisque;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
 }
 
 #title {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 
@@ -22,9 +32,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 80px;
-    margin-left: 20%;
-    margin-right: 20%;
+    padding-bottom: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
     
 }
@@ -34,7 +44,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+    gap: 10px;    
 }
 
 input {
@@ -44,4 +54,5 @@ input {
 .container {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }

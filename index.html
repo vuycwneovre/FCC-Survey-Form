@@ -11,7 +11,13 @@
 <body>
 
     <!-- Header -->
+
+    <div id="logo" >
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.echord.info%2Ffile%2FAttachments%2Fwikis%2Fwebsite%2Fupm%2Fupm-T.gif&f=1&nofb=1">
+    </div>
+
     <h1 id="title">Encuesta para el examen de Cálculo I</h1>
+
     <p id="description">
         Desde la delegación de alumnos nos han encomendado
         la tarea de realizar una encuesta para que los alumnos
@@ -20,26 +26,37 @@
     </p>
 
     <!-- Form -->
+
     <form id="survey-form">
 
         <label id="name-label">Nombre:</label>
-        <input type="text" id="name" placeholder="Introduzca nombre y apellidos">
+        <input type="text" id="name" placeholder="Introduzca nombre y apellidos" required>
 
         <label id="email-label">Dirección de correo:</label>
-        <input type="text" id="email" placeholder="Introduzca su correo oficial">
+        <input type="email" id="email" placeholder="Introduzca su correo oficial" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
         <label id="number-label" for="number">Número de matrícula:</label>
-        <input type="number" id="number" min="0" max="60000">
+        <input type="number" id="number" min="50000" max="60000" placeholder="Número de matrícula" required>
 
-        <label id="group">Grupo de clase:</label>
+        <label>Grupo de clase:</label>
+        <select id="dropdown" name="group">
+            <option value="m101">M101</option>
+            <option value="m106">M106</option>
+        </select required>
+
+        <label id="group">Hora del examen:</label>
         <div class="container">
-            <input type="checkbox" id="m101" name="m101" value="m101">
-            <label for="m101">M101</label>
-            <input type="checkbox" id="m106" name="m106" value="m106">
-            <label for="m106">M106</label>
-        </div>
+            <input type="radio" id="13" name="hour" value="13">
+            <label for="13">13.00</label>
+            <input type="radio" id="18" name="hour" value="18">
+            <label for="18">18.00</label>
+        </div required>
 
-        <input type="submit" value="Submit">
+        <label id="text-area">Comentarios adicionales:</label>
+        <textarea name="text-area"></textarea>
+
+        <input type="submit" id="submit" value="Enviar">
+
     </form>
     
 </body>
