@@ -1,2 +1,2 @@
 # FCC-Survey-Form
-Second responsive web desing project from [Free Code Camp](https://www.freecodecamp.org/)
+Second responsive web desing project from [FreeCodeCamp](https://www.freecodecamp.org/)
