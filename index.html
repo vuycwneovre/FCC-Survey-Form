@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <h1 id="title">Encuesta para el examen de Cálculo I</h1>
+    <p id="description">
+        Desde la delegación de alumnos nos han encomendado
+        la tarea de realizar una encuesta para que los alumnos
+        de Cálculo I de la rama de mecánica elijan cuándo quieren
+        realizar la primera prueba parcial.
+    </p>
+
+    <!-- Form -->
+    <form id="survey-form">
+
+        <label id="name-label">Nombre:</label>
+        <input type="text" id="name" placeholder="Introduzca nombre y apellidos">
+
+        <label id="email-label">Dirección de correo:</label>
+        <input type="text" id="email" placeholder="Introduzca su correo oficial">
+
+        <label id="number-label" for="number">Número de matrícula:</label>
+        <input type="number" id="number" min="0" max="60000">
+
+        <label id="group">Grupo de clase:</label>
+        <div class="container">
+            <input type="checkbox" id="m101" name="m101" value="m101">
+            <label for="m101">M101</label>
+            <input type="checkbox" id="m106" name="m106" value="m106">
+            <label for="m106">M106</label>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

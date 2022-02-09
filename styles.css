@@ -1,0 +1,47 @@
+* {
+    border: 0px;
+    margin: 0px;
+    
+}
+body {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodix.com%2Flogo%2F1959293.png&f=1&nofb=1);
+    background-size: 800px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    
+}
+
+#survey-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+input {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
